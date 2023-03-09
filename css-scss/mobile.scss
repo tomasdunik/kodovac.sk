@@ -1,0 +1,126 @@
+@media (max-width: 620px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    color: #343a40;
+    border-bottom: 8px solid #1864ab;
+  }
+
+  .container {
+    // width: 960px;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .header_content,
+  section {
+    margin-bottom: 96px;
+  }
+
+  header img {
+    border-radius: 0;
+  }
+
+  .header_content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 80px;
+    margin-top: 64px;
+  }
+
+  .header-text-box {
+    align-self: center;
+  }
+
+  h1 {
+    margin-bottom: 32px;
+    font-size: 44px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+
+    /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
+  }
+
+  h2 {
+    margin-bottom: 48px;
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .header-text {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .icon {
+    fill: #1864ab;
+    height: 30px;
+    width: 30px;
+  }
+
+  .icon:hover {
+    fill: #228be6;
+  }
+
+  .portfolio_boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .box {
+    // box-shadow: 0 20px 30px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 0;
+  }
+
+  .box p {
+    position: relative;
+    z-index: -1;
+  }
+
+  .screenshot_box {
+    background-color: red;
+    width: 320px;
+    height: 125px;
+    background: url(../images/3-column-preview-card-component.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+  }
+
+  .screenshot_box2 {
+    background-color: red;
+    width: 320px;
+    height: 125px;
+    background: url(../images/equalizer-landing-page.png);
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+  }
+
+  .screenshot_box3 {
+    background-color: red;
+    width: 320px;
+    height: 125px;
+    background: url(../images/huddle-landing-page-with-a-single-introductory-section.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+  }
+
+  .box:hover,
+  .box:focus,
+  .box:active {
+    background: none;
+  }
+} ;
