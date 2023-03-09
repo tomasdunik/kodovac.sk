@@ -64,12 +64,14 @@ img {
 
 .icon {
   fill: #1864ab;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s;
+  margin-right: 0.4rem;
 }
 
 .icon:hover {
-  fill: #228be6;
+  fill: #e8590c;
 }
 
 .portfolio_boxes {
@@ -80,7 +82,6 @@ img {
 }
 
 .portfolio_screenshot {
-  // box-shadow: 0 20px 30px 10px rgba(0, 0, 0, 0.07);
   border-radius: 3px;
   width: 384px;
   height: 189px;
@@ -142,4 +143,29 @@ img {
   .responsive p {
     filter: none;
   }
+}
+
+.aaaaaaaaaah {
+  position: relative;
+}
+
+.fa-github {
+  position: absolute;
+  font-size: 2.5rem;
+  z-index: 1;
+  bottom: 3.5rem;
+  left: 1rem;
+  transition: all 0.3s;
+  color: #1864ab;
+}
+
+.fa-github:hover {
+  color: #e8590c;
+  transition: all 0.3s;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
 }

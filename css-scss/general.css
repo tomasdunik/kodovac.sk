@@ -62,12 +62,14 @@ img {
 
 .icon {
   fill: #1864ab;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s;
+  margin-right: 0.4rem;
 }
 
 .icon:hover {
-  fill: #228be6;
+  fill: #e8590c;
 }
 
 .portfolio_boxes {
@@ -135,4 +137,29 @@ img {
 }
 .portfolio_box:hover .responsive p {
   filter: none;
+}
+
+.aaaaaaaaaah {
+  position: relative;
+}
+
+.fa-github {
+  position: absolute;
+  font-size: 2.5rem;
+  z-index: 1;
+  bottom: 3.5rem;
+  left: 1rem;
+  transition: all 0.3s;
+  color: #1864ab;
+}
+
+.fa-github:hover {
+  color: #e8590c;
+  transition: all 0.3s;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
 }/*# sourceMappingURL=general.css.map */
