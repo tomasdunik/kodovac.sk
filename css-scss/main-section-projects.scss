@@ -1,0 +1,95 @@
+@import "./partials/variables";
+
+.projects__heading {
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 80px;
+}
+
+.projects__boxes {
+  column-gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 96px;
+  row-gap: 80px;
+}
+
+.projects__box {
+  text-decoration: none;
+  width: 384px;
+  position: relative;
+}
+
+.projects__box:hover {
+  filter: none;
+
+  .projects__box__tags__language p {
+    filter: none;
+  }
+
+  .projects__box__tags__device p {
+    filter: none;
+  }
+}
+
+.projects__box__github-icon {
+  bottom: 3.5rem;
+  color: $color-blue;
+  font-size: 2.5rem;
+  left: 1rem;
+  position: absolute;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.projects__box__github-icon:hover {
+  color: $color-orange;
+  transition: all 0.3s;
+}
+
+.projects__box__screenshot {
+  filter: grayscale(100%);
+  height: 189px;
+  transition: all 0.3s;
+  width: 384px;
+  // border-radius: 3px;
+}
+
+.projects__box__screenshot:hover {
+  filter: none;
+}
+
+.projects__box__tags {
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.projects__box__tags__language {
+  display: flex;
+  width: 100%;
+}
+
+.projects__box__tags__language p {
+  background-color: $color-blue;
+  filter: grayscale(100%);
+  margin-right: 3px;
+  transition: all 0.3s;
+  width: 93px;
+  // border-radius: 3px;
+}
+
+.projects__box__tags__device {
+  display: flex;
+  margin-top: 3px;
+}
+
+.projects__box__tags__device p {
+  background-color: $color-blue;
+  filter: grayscale(100%);
+  margin-right: 3px;
+  transition: all 0.3s;
+  width: 93px;
+  // border-radius: 3px;
+}

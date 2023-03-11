@@ -1,245 +1,234 @@
 <!DOCTYPE html>
 <html lang="sk">
   <head>
+    <!-- ———————————————————— METADATA ———————————————————— -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tomáš Duník, junior kódovač webových
-    stránok.
+    <meta
+      name="description"
+      content="Tomáš Duník, junior kódovač webových
+    stránok."
+    />
+
+    <!-- ———————————————————— TITLE ———————————————————— -->
+    <title>kódovač Tomáš Duník</title>
+
+    <!-- ———————————————————— FAVICON ———————————————————— -->
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+
+    <!-- ———————————————————— FONTS ———————————————————— -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ———————————————————— CSS ———————————————————— -->
     <link rel="stylesheet" href="./css-scss/general.css" />
-    <link rel="stylesheet" href="./css-scss/tags.css" />
-    <link rel="stylesheet" href="./css-scss/mobile.css" />
+    <link rel="stylesheet" href="./css-scss/header.css" />
+    <link rel="stylesheet" href="./css-scss/main-section-projects.css" />
+    <link rel="stylesheet" href="./css-scss/footer.css" />
+
+    <!-- ———————————————————— SCRIPT ———————————————————— -->
     <script
       src="https://kit.fontawesome.com/d7e36835a2.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="header_content">
-          <div class="header-text-box">
-            <h1>
-              <span class="blue">Tomáš Duník</span>, junior
-              <span class="blue">kódovač</span> webových stránok
-            </h1>
-            <p class="header-text">
-              Vitaj na stránke, kde prezentujem moju tvorbu webových stránok.
-              Tvorbe stránok sa aktívne venujem 6 mesiacov. Keďže nemám
-              projekty, na ktorých by som pracoval, tak moje portfólio tvoria
-              projekty zo stránky Frontend Mentor.
-            </p>
+    <div class="website">
+      <header class="header">
+        <!-- ==================== Header ==================== -->
+        <section class="header__hero">
+          <h1 class="header__hero__title">
+            <span class="color-blue">Tomáš Duník</span>, junior
+            <span class="color-blue">kódovač</span> webových stránok
+          </h1>
+          <p class="header__hero__text">
+            Vitaj na stránke, kde prezentujem moju tvorbu webových stránok.
+            Tvorbe stránok sa aktívne venujem 6 mesiacov. Keďže nemám projekty,
+            na ktorých by som pracoval, tak moje portfólio tvoria projekty zo
+            stránky Frontend Mentor.
+          </p>
+          <div>
             <a href="https://github.com/tomasdunik"
-              ><svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 496 512"
-              >
-                <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                /></svg
+              ><i class="header__hero__icon fa-brands fa-github"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-dun%C3%ADk-31101325a/"
-              ><svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                /></svg
+              ><i class="header__hero__icon fa-brands fa-linkedin"></i
             ></a>
           </div>
-          <img src="./images/coding.jpg" alt="Photo" />
-        </div>
+        </section>
+        <img
+          class="header__image"
+          src="./images/coding.jpg"
+          alt="Písanie na laptope"
+        />
       </header>
 
       <main>
-        <section class="portfolio">
-          <h2 class="portfolio_heading">Projekty zo stránky Frontend Mentor</h2>
+        <!-- ==================== Main - Section projects ==================== -->
+        <section class="projects">
+          <h2 class="projects__heading">Projekty zo stránky Frontend Mentor</h2>
 
-          <div class="portfolio_boxes">
-            <div class="aaaaaaaaaah">
+          <div class="projects__boxes">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__meet-landing-page.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__meet-landing-page/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/13.png"
-                  alt=""
+                  alt="Screenshot projektu Meet landing page"
                 />
-                <div class="description">
-                  <div class="language">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>SCSS</p>
-                    <!-- <p>JS</p> -->
-                  </div>
-                  <div class="responsive">
-                    <p>Desktop</p>
-                    <p>Tablet</p>
-                    <p>Mobil</p>
-                  </div>
-                </div>
               </a>
+              <div class="projects__box__tags">
+                <div class="projects__box__tags__language">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>SCSS</p>
+                </div>
+                <div class="projects__box__tags__device">
+                  <p>Desktop</p>
+                  <p>Tablet</p>
+                  <p>Mobil</p>
+                </div>
+              </div>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__four-card-feature-section.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__four-card-feature-section/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/12.png"
-                  alt=""
+                  alt="Screenshot projektu Four card feature section"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>SCSS</p>
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
                     <p>Mobil</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="hhttps://github.com/tomasdunik/frontend-mentor__single-price-grid-component.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__single-price-grid-component/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/11.png"
-                  alt=""
+                  alt="Screenshot projektu Single price grid component"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>SCSS</p>
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
                     <p>Mobil</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__social-proof-section.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__social-proof-section/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/10.png"
-                  alt=""
+                  alt="Screenshot projektu Social proof section"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>SCSS</p>
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
                     <p>Mobil</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__order-summary-component.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__order-summary-component/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/9.png"
-                  alt=""
+                  alt="Screenshot projektu Order summary component"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
                     <p>Mobil</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__pod-request-access-landing-page.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__pod-request-access-landing-page/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/8.png"
-                  alt=""
+                  alt="Screenshot projektu Pod request access landing page"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
                     <p>JS</p>
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
                     <p>Tablet</p>
                     <p>Mobil</p>
@@ -248,28 +237,25 @@
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__equalizer-landing-page.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__equalizer-landing-page/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/7.png"
-                  alt=""
+                  alt="Screenshot projektu Equalizer landing page"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
                     <p>Tablet</p>
                     <p>Mobil</p>
@@ -278,201 +264,164 @@
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__huddle-landing-page-with-single-introductory-section.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__huddle-landing-page-with-single-introductory-section/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/6.png"
-                  alt=""
+                  alt="Screenshot projektu Huddle landing page qith single introductory section"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
                     <p>Mobil</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__nft-preview-card-component-main.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__nft-preview-card-component-main/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/5.png"
-                  alt=""
+                  alt="Screenshot projektu NFT preview card component"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
                     <p>Mobil</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__3-column-preview-card-component.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__3-column-preview-card-component/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/4.png"
-                  alt=""
+                  alt="Screenshot projektu 3-column preview card component"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
                     <p>Mobil</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__stats-preview-card-component.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__stats-preview-card-component/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/3.png"
-                  alt=""
+                  alt="Screenshot projektu Stats preview card component"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
                     <p>Mobil</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__profile-card-component.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__profile-card-component/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/2.png"
-                  alt=""
+                  alt="Screenshot projektu Profile card component"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
-                    <!-- <p>Mobil</p> -->
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="aaaaaaaaaah">
+            <div class="projects__box">
               <a
                 href="https://github.com/tomasdunik/frontend-mentor__QR-code-component.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
               <a
                 href="https://tomasdunik.github.io/frontend-mentor__QR-code-component/"
-                class="portfolio_box"
               >
                 <img
-                  class="portfolio_screenshot"
+                  class="projects__box__screenshot"
                   src="./images/screenshots/1.png"
-                  alt=""
+                  alt="Screenshot projektu QR code component"
                 />
-                <div class="description">
-                  <div class="language">
+                <div class="projects__box__tags">
+                  <div class="projects__box__tags__language">
                     <p>HTML</p>
                     <p>CSS</p>
-                    <!-- <p>SCSS</p> -->
-                    <!-- <p>JS</p> -->
                   </div>
-                  <div class="responsive">
+                  <div class="projects__box__tags__device">
                     <p>Desktop</p>
-                    <!-- <p>Tablet</p> -->
-                    <!-- <p>Mobil</p> -->
                   </div>
                 </div>
               </a>
             </div>
           </div>
         </section>
-        <!-- <section class="language">
-          <ul>
-            <li>
-              <h3>HTML</h3>
-              <p>fdsfd</p>
-            </li>
-            <li>
-              <h3>CSS</h3>
-              <p>fdsfddfd</p>
-            </li>
-          </ul>
-        </section> -->
       </main>
-      <footer>
+      <!-- ==================== Footer ==================== -->
+      <footer class="footer">
         <p>2023 Tomáš Duník</p>
       </footer>
     </div>
