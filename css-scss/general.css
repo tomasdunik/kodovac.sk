@@ -17,4 +17,10 @@ body {
 
 .color-blue {
   color: #1864ab;
+}
+
+@media (max-width: 730px) {
+  body {
+    border-bottom: 4px solid #1864ab;
+  }
 }/*# sourceMappingURL=general.css.map */

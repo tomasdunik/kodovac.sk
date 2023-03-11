@@ -74,6 +74,7 @@
 .projects__box__tags__language {
   display: flex;
   width: 100%;
+  min-height: 1.5rem;
 }
 
 .projects__box__tags__language p {
@@ -82,12 +83,14 @@
   margin-right: 0.188rem;
   transition: all 0.3s;
   width: 5.813rem;
+  line-height: 1.5;
   // border-radius: 3px;
 }
 
 .projects__box__tags__device {
   display: flex;
   margin-top: 0.188rem;
+  min-height: 1.5rem;
 }
 
 .projects__box__tags__device p {
@@ -96,11 +99,12 @@
   margin-right: 0.188rem;
   transition: all 0.3s;
   width: 5.813rem;
+  line-height: 1.5;
   // border-radius: 3px;
 }
 
 // ====================================================
-// ================= RESPONSIVE 810px =================
+// ================= RESPONSIVE 1215px ================
 // ====================================================
 
 @media (max-width: 1215px) {
@@ -137,3 +141,24 @@
     width: 25%;
   }
 }
+
+// ====================================================
+// ================= RESPONSIVE 730px =================
+// ====================================================
+
+@media (max-width: 730px) {
+  .projects {
+    margin: 3rem 1.5rem 5rem 1.5rem;
+  }
+
+  .projects__boxes {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+    row-gap: 4rem;
+  }
+
+  .projects__heading {
+    font-size: 1.88rem;
+    margin-bottom: 3rem;
+  }
+} ;

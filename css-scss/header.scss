@@ -43,7 +43,7 @@
 }
 
 // ====================================================
-// ================= RESPONSIVE 810px =================
+// ================= RESPONSIVE 1215px ================
 // ====================================================
 
 @media (max-width: 1215px) {
@@ -55,7 +55,7 @@
 
   .header__hero__title {
     margin-bottom: 3rem;
-    width: 31.25rem;
+    max-width: 31.25rem;
   }
 
   .header__hero__text {
@@ -66,3 +66,29 @@
     margin-bottom: 3rem;
   }
 }
+
+// ====================================================
+// ================= RESPONSIVE 730px =================
+// ====================================================
+
+@media (max-width: 730px) {
+  .header {
+    margin: 3rem 1.5rem 5rem 1.5rem;
+  }
+
+  .header__hero__title {
+    font-size: 1.88rem;
+    margin-bottom: 2rem;
+  }
+
+  .header__hero__text {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .header__hero__icon {
+    font-size: 2.3rem;
+    margin-right: 0.7rem;
+  }
+} ;
