@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="sk">
   <head>
+    <!-- ———————————————————— GOOGLE ANALYTICS ———————————————————— -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-260535812-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-260535812-1");
+    </script>
+
     <!-- ———————————————————— METADATA ———————————————————— -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,12 +45,15 @@
     <link rel="stylesheet" href="./css-scss/header.css" />
     <link rel="stylesheet" href="./css-scss/main-section-projects.css" />
     <link rel="stylesheet" href="./css-scss/footer.css" />
+    <link rel="stylesheet" href="./css-scss/cookies.css" />
 
     <!-- ———————————————————— SCRIPT ———————————————————— -->
     <script
       src="https://kit.fontawesome.com/d7e36835a2.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./javascript/cookies.js" defer></script>
   </head>
   <body>
     <div class="website">
@@ -74,13 +93,10 @@
           <h2 class="projects__heading">Moje projekty</h2>
           <div class="projects__boxes">
             <div class="projects__box">
-              <a
-                href="https://github.com/tomasdunik/frontend-mentor__meet-landing-page.git"
+              <a href="https://github.com/tomasdunik/kodovac.sk.git"
                 ><i class="fa-brands fa-github projects__box__github-icon"></i
               ></a>
-              <a
-                href="https://tomasdunik.github.io/frontend-mentor__meet-landing-page/"
-              >
+              <a href="https://kodovac.sk">
                 <img
                   class="projects__box__screenshot"
                   src="./images/screenshots/kodovac.png"
@@ -454,6 +470,14 @@
       <!-- ==================== Footer ==================== -->
       <footer class="footer">
         <p>2023 Tomáš Duník</p>
+        <section class="cookies">
+          <i class="fa-solid fa-cookie-bite cookies-icon"></i>
+          <p class="cookies-text">
+            Táto webová stránka používa súbory cookies. Prehliadaním webovej
+            stránky vyjadrujete súhlas s ich používaním.
+          </p>
+          <button class="cookies-button">Rozumiem</button>
+        </section>
       </footer>
     </div>
   </body>
