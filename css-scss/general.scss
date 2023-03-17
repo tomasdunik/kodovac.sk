@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   border-bottom: 8px solid $color-blue;
   color: $color-grey;
