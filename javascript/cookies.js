@@ -1,5 +1,5 @@
 document
   .querySelector(".cookies-button")
   .addEventListener("click", function () {
-    document.querySelector(".cookies").style.display = "none";
+    document.querySelector(".cookies").style.opacity = 0;
   });
