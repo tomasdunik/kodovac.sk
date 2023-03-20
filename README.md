@@ -8,7 +8,7 @@ Tento projekt je moja osobná webová stránka. Stránku postupne vylepšujem a 
 
 - HTML
 - CSS
-- Sass
+- SCSS
 - JavaScript
 
 ## 🧭 Užitočné odkazy
