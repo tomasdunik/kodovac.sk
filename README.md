@@ -2,13 +2,13 @@
 
 ## 📝 Informácie o projekte
 
-Tento projekt je moja osobná webová stránka. Stránku postupne vylepšujem a upravujem.
+Tento projekt je moja osobná webová stránka. Stránku postupne vylepšujem a upravujem. Kód, ktorý je na GitHube sa nemusí vždy presne zhodovať s kódom, ktorý je zverejnený na [https://kodovac.sk/](https://kodovac.sk/).
 
 ## 🛠️ Vytvorené s
 
 - HTML
 - CSS
-- Sass
+- SCSS
 - JavaScript
 
 ## 🧭 Užitočné odkazy
