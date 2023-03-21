@@ -45,30 +45,45 @@
     <link rel="stylesheet" href="./css-scss/main-section-projects.css" />
     <link rel="stylesheet" href="./css-scss/footer.css" />
     <link rel="stylesheet" href="./css-scss/cookies.css" />
+    <link rel="stylesheet" href="./css-scss/skills.css" />
 
     <!-- ———————————————————— SCRIPT ———————————————————— -->
     <script
       src="https://kit.fontawesome.com/d7e36835a2.js"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./javascript/cookies.js" defer></script>
   </head>
   <body>
     <div class="website">
       <header class="header">
         <!-- ==================== Header ==================== -->
         <nav class="nav">
-          <a class="nav-button" href="#projekty">projekty</a>
-          <a class="nav-button" href="#">tvorba webových stránok</a>
-          <a class="nav-button" href="#">o mne</a>
-          <a class="nav-button" href="#">schopnosti</a>
-          <a class="nav-button" href="#">kontakt</a>
+          <a class="nav-button" href="./index.html">projekty</a>
+          <a class="nav-button" href="#"><s>tvorba webových stránok</s></a>
+          <a class="nav-button" href="#"><s>o mne</s></a>
+          <a class="nav-button" href="./skills.html">zručnosti</a>
+          <a class="nav-button" href="#"><s>kontakt</s></a>
         </nav>
+        <nav class="nav-mobile">
+          <p class="nav-mobile-description">Menu</p>
+          <a class="nav-mobile-button" href="./index.html">projekty</a>
+          <a class="nav-mobile-button" href="#"
+            ><s>tvorba webových stránok</s></a
+          >
+          <a class="nav-mobile-button" href="#"><s>o mne</s></a>
+          <a class="nav-mobile-button" href="./skills.html">zručnosti</a>
+          <a class="nav-mobile-button" href="#"><s>kontakt</s></a>
+        </nav>
+        <div>
+          <i id="nav-burger-icon" class="nav-burger-icon fa-solid fa-bars"></i>
+        </div>
+        <div>
+          <i id="nav-cancel-icon" class="nav-cancel-icon fa-solid fa-xmark"></i>
+        </div>
         <section></section>
         <section class="header__hero">
           <h1 class="header__hero__title">
-            <span class="color-blue">Tomáš Duník</span>, junior
+            <span class="color-blue">Tomáš Duník</span>, začiatočník
             <span class="color-blue">kódovač</span> webových stránok
           </h1>
           <p class="header__hero__text">
@@ -81,8 +96,7 @@
             <a href="https://github.com/tomasdunik"
               ><i class="header__hero__icon fa-brands fa-github"></i
             ></a>
-            <a
-              href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-dun%C3%ADk-31101325a/"
+            <a href="https://www.linkedin.com/in/tomasdunik/"
               ><i class="header__hero__icon fa-brands fa-linkedin"></i
             ></a>
             <a href="mailto:tomasdunik@gmail.com"
@@ -479,7 +493,7 @@
       </main>
       <!-- ==================== Footer ==================== -->
       <footer class="footer">
-        <p>2023 Tomáš Duník</p>
+        <p>&copy; Tomáš Duník 2023</p>
         <section class="cookies">
           <i class="fa-solid fa-cookie-bite cookies-icon"></i>
           <p class="cookies-text">
@@ -488,7 +502,19 @@
           </p>
           <button class="cookies-button">Rozumiem</button>
         </section>
+        <div class="footer__icons">
+          <a href="https://github.com/tomasdunik"
+            ><i class="footer__icon fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/tomasdunik/"
+            ><i class="footer__icon fa-brands fa-linkedin"></i
+          ></a>
+          <a href="mailto:tomasdunik@gmail.com"
+            ><i class="footer__icon fa-solid fa-envelope"></i
+          ></a>
+        </div>
       </footer>
     </div>
+    <script src="./javascript/cookies.js"></script>
   </body>
 </html>

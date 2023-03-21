@@ -38,6 +38,18 @@
   color: $color-orange;
 }
 
+// .fa-github {
+//   color: #201e1e;
+// }
+
+// .fa-linkedin {
+//   color: #0284ca;
+// }
+
+// .fa-envelope {
+//   color: #e34133;
+// }
+
 .header__image {
   width: 100%;
 }
@@ -59,9 +71,21 @@
 
 .nav-button:hover {
   border-bottom: 1px solid $color-white;
-  color: $color-blue;
-  text-shadow: 0 0 0.7px $color-blue, 0 0 0.7px $color-blue;
+  color: $color-orange;
+  text-shadow: 0 0 0.7px $color-orange, 0 0 0.7px $color-orange;
   transition: all 0.2s;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+#nav-burger-icon {
+  display: none;
+}
+
+#nav-cancel-icon {
+  display: none;
 }
 
 // ====================================================
@@ -96,6 +120,7 @@
 @media (max-width: 730px) {
   .header {
     margin: 3rem 1.5rem 5rem 1.5rem;
+    position: relative;
   }
 
   .header__hero__title {
@@ -113,4 +138,128 @@
     font-size: 2.3rem;
     margin-right: 0.7rem;
   }
-} ;
+
+  .nav {
+    display: none;
+  }
+
+  #nav-burger-icon {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: $color-blue;
+    font-size: 2.3rem;
+    transition: all 0.3s;
+  }
+
+  #nav-cancel-icon {
+    margin-bottom: 2rem;
+    color: $color-blue;
+    font-size: 2.3rem;
+    transition: all 0.3s;
+    padding-left: 0.25rem;
+  }
+
+  #nav-burger-icon:hover,
+  #nav-cancel-icon:hover {
+    color: $color-orange;
+    cursor: pointer;
+  }
+
+  .nav-mobile {
+    // display: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    background-color: $color-blue;
+    // height: ;
+    width: 100%;
+    top: 4rem;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+
+    opacity: 0.95;
+    z-index: 100;
+  }
+
+  .nav-mobile-description {
+    color: $color-white;
+    font-size: 1.625rem;
+    text-transform: uppercase;
+  }
+
+  .nav-mobile-button {
+    text-decoration: none;
+    border-bottom: 1px solid $color-white;
+    padding-bottom: 2px;
+    color: $color-white;
+    font-size: 1.125rem;
+  }
+
+  .nav-mobile-button:hover {
+    color: $color-orange;
+    border-bottom: 1px solid $color-orange;
+    font-size: 1.125rem;
+  }
+
+  // .nav-cancel-icon {
+  //   display: none;
+  // }
+
+  // .nav-burger-icon {
+  // }
+
+  // .nav-mmobile {
+  //   display: inline;
+  //   margin-bottom: 2rem;
+  // }
+
+  // .menu-icon:hover {
+  //   cursor: pointer;
+  // }
+
+  // .navigation-mobil {
+  //   background-color: $color-blue;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   position: absolute;
+  //   z-index: 100;
+  //   padding: 2rem;
+  //   top: 0;
+  //   opacity: 0.95;
+
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-end;
+  //   gap: 2rem;
+  //   display: none;
+
+  //   overflow: hidden;
+  // }
+
+  // .navvv {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   align-self: center;
+  //   font-size: 1.125rem;
+  //   gap: 2rem;
+  // }
+
+  // .nav-mobil {
+  //   color: $color-white;
+  //   text-decoration: none;
+  // }
+
+  // .cancel-icon {
+  //   color: $color-white;
+  //   transition: all 0.3s;
+  //   font-size: 2.3rem;
+  //   cursor: pointer;
+  // }
+
+  // .cancel-icon:hover {
+  //   color: $color-orange;
+  // }
+}

@@ -8,3 +8,14 @@
   display: flex;
   justify-content: center;
 }
+
+.footer__icon {
+  color: $color-grey;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  transition: all 0.3s;
+}
+
+.footer__icon:hover {
+  color: $color-blue;
+}
