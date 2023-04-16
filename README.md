@@ -1,4 +1,4 @@
-# Moja osobná webová stránka
+# Moja stará osobná webová stránka. Používal som ju približne od 2/2023 do 3/2023.
 
 ## 📝 Informácie o projekte
 
